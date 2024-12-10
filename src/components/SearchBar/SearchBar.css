@@ -1,0 +1,96 @@
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 20px auto;
+
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.search-bar input {
+  padding: 12px 15px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.search-bar input:focus {
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  border-color: #007bff;
+}
+
+.search-bar input::placeholder {
+  font-style: italic;
+  color: #aaa;
+}
+
+.filter-tags {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-tags span {
+  cursor: pointer;
+  padding: 7px 15px;
+  border-radius: 25px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.filter-tags span:hover {
+  background-color: #e9f7ff;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.filter-tags .active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.filter-tags .active:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.filter-tags span i {
+  font-size: 16px;
+}
+
+button.remove-filter {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button.remove-filter:hover {
+  background-color: #c0392b;
+}
+
+button.remove-filter i {
+  font-size: 16px;
+}
